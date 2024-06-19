@@ -1,62 +1,168 @@
-# Creating a tuple
-my_tuple = (1, 2, 3, 4, 5)
+# Arithmetic operations script
+a = 10
+b = 5
 
-# Accessing elements of a tuple
-print("First element:", my_tuple[0])
-print("Last element:", my_tuple[-1])
+# Addition
+sum_ab = a + b
+print(f"Sum of {a} and {b} is: {sum_ab}")
 
-# Tuple is immutable, so we can't add or remove elements
-# However, we can concatenate or slice tuples to create new tuples
+# Subtraction
+diff_ab = a - b
+print(f"Difference of {a} and {b} is: {diff_ab}")
 
-# Concatenating tuples
-new_tuple = my_tuple + (6, 7)
-print("Concatenated tuple:", new_tuple)
+# Multiplication
+prod_ab = a * b
+print(f"Product of {a} and {b} is: {prod_ab}")
 
-# Slicing tuple
-sliced_tuple = my_tuple[2:4]
-print("Sliced tuple:", sliced_tuple)
+# Division
+div_ab = a / b
+print(f"Division of {a} by {b} is: {div_ab}")
 
-# Iterating through the tuple
-print("Iterating through the tuple:")
-for item in my_tuple:
-    print(item)
-/////////////////////////////////////////////
+# Integer Division (floor division)
+div_ab_int = a // b
+print(f"Integer division of {a} by {b} is: {div_ab_int}")
+
+# Modulus
+mod_ab = a % b
+print(f"Modulus of {a} by {b} is: {mod_ab}")
+
+# Exponentiation
+exp_ab = a ** b
+print(f"{a} raised to the power of {b} is: {exp_ab}")
+
+# String manipulation script
+string1 = "Hello,"
+string2 = "world!"
+
+# Concatenation
+concatenated_string = string1 + " " + string2
+print("Concatenated string:", concatenated_string)
+
+# Length of string
+length_string1 = len(string1)
+print(f"Length of '{string1}' is: {length_string1}")
+
+# String slicing
+substring = string2[0:3]
+print(f"Substring of '{string2}' from index 0 to 2 is: {substring}")
+
+# Uppercase and lowercase
+uppercase_string1 = string1.upper()
+lowercase_string2 = string2.lower()
+print(f"Uppercase of '{string1}' is: {uppercase_string1}")
+print(f"Lowercase of '{string2}' is: {lowercase_string2}")
+
+# Check if substring exists
+if 'world' in concatenated_string:
+    print("'world' is present in the concatenated string.")
+else:
+    print("'world' is not present in the concatenated string.")
+# Conditional statements script
+number = 15
+
+# Check if number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+
+# Check if number is positive, negative, or zero
+if number > 0:
+    print(f"{number} is positive.")
+elif number < 0:
+    print(f"{number} is negative.")
+else:
+    print(f"{number} is zero.")
+
+# Nested conditional statement
+grade = 85
+
+if grade >= 90:
+    print("Grade is A")
+elif grade >= 80:
+    print("Grade is B")
+elif grade >= 70:
+    print("Grade is C")
+elif grade >= 60:
+    print("Grade is D")
+else:
+    print("Grade is F")
+////list list
 # Creating a list
-my_list = [1, 2, 3, 4, 5]
+fruits = ['apple', 'banana', 'cherry', 'date']
 
-# Accessing elements of a list
-print("First element:", my_list[0])
-print("Last element:", my_list[-1])
+# Accessing elements
+print("First fruit:", fruits[0])
+print("Last fruit:", fruits[-1])
 
-# Adding an element to the list
-my_list.append(6)
-print("List after appending 6:", my_list)
+# Slicing
+print("Sliced fruits:", fruits[1:3])
 
-# Removing an element from the list
-my_list.remove(3)
-print("List after removing 3:", my_list)
+# Modifying elements
+fruits[1] = 'blueberry'
+print("Modified list:", fruits)
 
-# Iterating through the list
-print("Iterating through the list:")
-for item in my_list:
-    print(item)
-///////////////////////////////////
+# Adding elements
+fruits.append('elderberry')
+print("After appending:", fruits)
+
+# Removing elements
+removed_fruit = fruits.pop(2)
+print("After popping:", fruits)
+print("Removed fruit:", removed_fruit)
+
+# Length of the list
+print("Length of list:", len(fruits))
+
+# Iterating over elements
+print("Iterating over list:")
+for fruit in fruits:
+    print(fruit)
+//dictionary
 # Creating a dictionary
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+person = {
+    'name': 'John Doe',
+    'age': 30,
+    'city': 'New York',
+    'email': 'john.doe@example.com'
+}
 
-# Accessing elements of a dictionary
-print("Name:", my_dict['name'])
-print("Age:", my_dict['age'])
+# Accessing values by keys
+print("Name:", person['name'])
+print("Age:", person['age'])
 
-# Adding a new key-value pair to the dictionary
-my_dict['gender'] = 'Male'
-print("Dictionary after adding gender:", my_dict)
+# Modifying values
+person['age'] = 32
+print("Updated age:", person['age'])
 
-# Removing a key-value pair from the dictionary
-del my_dict['city']
-print("Dictionary after removing city:", my_dict)
+# Adding new key-value pairs
+person['phone'] = '555-1234'
+print("After adding phone:", person)
 
-# Iterating through the dictionary
-print("Iterating through the dictionary:")
-for key, value in my_dict.items():
-    print(key, ":", value)
+# Removing a key-value pair
+removed_email = person.pop('email')
+print("After removing email:", person)
+print("Removed email:", removed_email)
+
+# Length of the dictionary
+print("Number of items in dictionary:", len(person))
+
+# Iterating over keys and values
+print("Iterating over dictionary:")
+for key, value in person.items():
+    print(key + ":", value)
+////////////tuple////////
+# Creating a tuple
+coordinates = (3, 5)
+
+# Accessing elements
+print("X coordinate:", coordinates[0])
+print("Y coordinate:", coordinates[1])
+
+# Length of the tuple
+print("Length of tuple:", len(coordinates))
+
+# Iterating over elements
+print("Iterating over tuple:")
+for coordinate in coordinates:
+    print(coordinate)
